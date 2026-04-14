@@ -1,0 +1,8 @@
+(?) Try to add a method addDigitalVideoDisc which allows to pass an arbitrary number of arguments for dvd. Compare to an array parameter. What do you prefer in this case?
+
+That way is more flexible and convenient because it allows passing an arbitrary number of arguments without creating an array explicitly. Therefore, it is preferred.
+
+(?) Is JAVA a Pass by Value or a Pass by Reference programming language?
+
+Java is a pass-by-value programming language. 
+When passing objects, the value of the reference is copied, so the method can modify the object's contents but cannot change the original reference.
