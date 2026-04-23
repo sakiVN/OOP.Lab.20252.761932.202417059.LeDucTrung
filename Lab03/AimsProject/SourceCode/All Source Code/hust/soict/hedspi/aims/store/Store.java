@@ -1,4 +1,6 @@
-package AimsPackage;
+package hust.soict.hedspi.aims.store;
+
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc;
 
 public class Store {
     private static final int MAX_ITEMS_IN_STORE = 100;
