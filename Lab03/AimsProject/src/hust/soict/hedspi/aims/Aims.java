@@ -1,7 +1,7 @@
 package hust.soict.hedspi.aims;
 
 import hust.soict.hedspi.aims.cart.Cart;
-import hust.soict.hedspi.aims.disc.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.DigitalVideoDisc;
 
 public class Aims {
     public static void main(String[] args) {
@@ -16,18 +16,10 @@ public class Aims {
         dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 87, 24.95f);
 
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin");
-        dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-
-        // Thêm vào giỏ
-        anOrder.addDigitalVideoDisc(dvd1);
-        anOrder.addDigitalVideoDisc(dvd2);
-        anOrder.addDigitalVideoDisc(dvd3);
+        //dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
 
         // In tổng tiền
         System.out.println("Total cost is: " + anOrder.totalCost());
-
-        // Test xóa (b11)
-        anOrder.removeDigitalVideoDisc(dvd2);
 
         // In lại tổng tiền
         System.out.println("Total cost after removal: " + anOrder.totalCost());
