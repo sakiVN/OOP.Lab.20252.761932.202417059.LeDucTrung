@@ -1,3 +1,4 @@
+LAB 04 - ANSWERS:
 (?) Which classes are aggregates of other classes? Checking all constructors of whole classes if they
     initialize for their parts?
 Cart and Store aggregate Media objects, while CompactDisc aggregates Track objects.
