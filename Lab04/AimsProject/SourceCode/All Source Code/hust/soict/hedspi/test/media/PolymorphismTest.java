@@ -1,15 +1,17 @@
-package hust.soict.hedspi.test.cart;
+package hust.soict.hedspi.test.media;
 
-import hust.soict.hedspi.aims.cart.Cart;
+import java.util.ArrayList;
+
 import hust.soict.hedspi.aims.media.Book;
 import hust.soict.hedspi.aims.media.CompactDisc;
 import hust.soict.hedspi.aims.media.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.Media;
 
-public class CartTest {
+public class PolymorphismTest {
 
     public static void main(String[] args) {
 
-        Cart cart = new Cart();
+        ArrayList<Media> mediae = new ArrayList<Media>();
 
         Book book = new Book(
                 1,
@@ -35,18 +37,12 @@ public class CartTest {
                         "Unknown",
                         "Artist");
 
-        cart.addMedia(book);
-        cart.addMedia(dvd);
-        cart.addMedia(cd);
+        mediae.add(book);
+        mediae.add(dvd);
+        mediae.add(cd);
 
-        cart.print();
-
-        System.out.println("\nSORT BY TITLE:");
-        cart.sortByTitleCost();
-        cart.print();
-
-        System.out.println("\nSORT BY COST:");
-        cart.sortByCostTitle();
-        cart.print();
+        for (Media media : mediae) {
+            System.out.println(media.toString());
+        }
     }
 }
